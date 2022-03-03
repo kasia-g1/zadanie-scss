@@ -1,0 +1,64 @@
+body {
+	font-family: $font;
+	background-color: $color-blue;
+	color: $color-white;
+	margin: 0 auto;
+}
+nav {
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline-block;
+	padding: 5px 30px;
+	font-weight: 400;
+	font-size: 1.2em;
+	margin: 10px;
+}
+a {
+	color: $color-purple;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.half-column {
+	@include show;
+}
+
+.landing-copy {
+	margin-left: 70px;
+
+	&:p {
+		font-size: 1.3em;
+		line-height: 1.4em;
+	}
+
+	&:h1 {
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+}
+
+.cta-button {
+	@include btn;
+
+	&:hover {
+		background-color: $color-hover;
+		text-decoration: none;
+	}
+}
+
+.right {
+	float: right;
+}
+
+nav {
+	margin-top: 6em;
+	background-color: $color-bgc;
+	height: 3.75em;
+	padding: 0px 40px;
+}
+
+
